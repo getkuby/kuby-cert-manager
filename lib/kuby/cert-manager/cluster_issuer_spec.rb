@@ -13,7 +13,7 @@ module Kuby
         ::KubeDSL::Resource.new(serialize)
       end
 
-      def kind
+      def kind_sym
         :cluster_issuer_spec
       end
     end

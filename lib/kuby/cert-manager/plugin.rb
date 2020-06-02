@@ -20,7 +20,7 @@ module Kuby
       end
 
       def resources
-        [cluster_issuer]
+        @resources ||= [cluster_issuer]
       end
 
       def annotate_ingress(ingress)
@@ -36,7 +36,7 @@ module Kuby
       private
 
       def issuer_name
-        @issuer_name ||= "letsencrypt-#{spec.environment}"
+        @issuer_name ||= "letsencrypt-#{spec.definition.environment}"
       end
 
       # hard-code this stuff for now
@@ -72,11 +72,11 @@ module Kuby
       end
 
       def install_cert_manager
-        Kuby.logger.info(ColorizedString['Installing cert-manager...'].yellow)
+        Kuby.logger.info('Installing cert-manager...')
         kubernetes_cli.apply_uri(CERT_MANAGER_RESOURCE)
-        Kuby.logger.info(ColorizedString['cert-manager installed successfully!'].yellow)
+        Kuby.logger.info('cert-manager installed successfully!')
       rescue => e
-        Kuby.logger.fatal(ColorizedString[e.message].red)
+        Kuby.logger.fatal(e.message)
         raise
       end
 

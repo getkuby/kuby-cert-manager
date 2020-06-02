@@ -14,7 +14,7 @@ module Kuby
         end
       end
 
-      def kind
+      def kind_sym
         :acme_strategy
       end
     end

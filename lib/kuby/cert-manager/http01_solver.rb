@@ -9,7 +9,7 @@ module Kuby
         end
       end
 
-      def kind
+      def kind_sym
         :http01_solver
       end
     end

@@ -9,7 +9,7 @@ module Kuby
         end
       end
 
-      def kind
+      def kind_sym
         :private_key_secret_ref
       end
     end

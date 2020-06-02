@@ -15,7 +15,7 @@ module Kuby
         end
       end
 
-      def kind
+      def kind_sym
         :cluster_issuer
       end
     end
