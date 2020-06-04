@@ -1,3 +1,5 @@
+require 'kuby'
+
 module Kuby
   module CertManager
     class Plugin < ::Kuby::Kubernetes::Plugin

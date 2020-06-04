@@ -1,4 +1,3 @@
-require 'kuby'
 require 'kuby/cert-manager/plugin'
 
 module Kuby
