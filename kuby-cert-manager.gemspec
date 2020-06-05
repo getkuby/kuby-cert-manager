@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version  = ::Kuby::CertManager::VERSION
   s.authors  = ['Cameron Dutro']
   s.email    = ['camertron@gmail.com']
-  s.homepage = 'http://github.com/camertron/kuby-cert-manager'
+  s.homepage = 'http://github.com/getkuby/kuby-cert-manager'
 
   s.description = s.summary = 'Kuby plugin for automatically generating TLS certificates.'
 
