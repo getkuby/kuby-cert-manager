@@ -38,7 +38,7 @@ module Kuby
       private
 
       def issuer_name
-        @issuer_name ||= "letsencrypt-#{spec.definition.environment}"
+        @issuer_name ||= "letsencrypt-#{spec.definition.environment.name}"
       end
 
       # hard-code this stuff for now
