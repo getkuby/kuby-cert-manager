@@ -7,7 +7,7 @@ gemspec
 gem 'helm-rb'
 
 group :development, :test do
-  gem 'kuby', path: '../kuby'
+  gem 'kuby-core', path: '../kuby-core'
   gem 'kuby-kube-db', path: '../kuby-kube-db'
   gem 'pry-byebug'
   gem 'rake'
