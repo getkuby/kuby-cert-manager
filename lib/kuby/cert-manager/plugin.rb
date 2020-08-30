@@ -2,7 +2,7 @@ require 'kuby'
 
 module Kuby
   module CertManager
-    class Plugin < ::Kuby::Kubernetes::Plugin
+    class Plugin < ::Kuby::Plugin
       class Config
         extend ::KubeDSL::ValueFields
 
@@ -38,7 +38,7 @@ module Kuby
       private
 
       def issuer_name
-        @issuer_name ||= "letsencrypt-#{spec.definition.environment.name}"
+        @issuer_name ||= "letsencrypt-#{environment.name}"
       end
 
       # hard-code this stuff for now
@@ -87,7 +87,7 @@ module Kuby
       end
 
       def spec
-        definition.kubernetes
+        environment.kubernetes
       end
 
       def kubernetes_cli
