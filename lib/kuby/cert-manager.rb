@@ -1,14 +1,14 @@
-require 'kuby/cert-manager/plugin'
+# typed: strict
+
+require 'kuby'
+require 'kuby/cert-manager/entrypoint'
 
 module Kuby
   module CertManager
-    autoload :AcmeStrategy,        'kuby/cert-manager/acme_strategy'
-    autoload :ClusterIssuer,       'kuby/cert-manager/cluster_issuer'
-    autoload :ClusterIssuerSpec,   'kuby/cert-manager/cluster_issuer_spec'
-    autoload :Http01Solver,        'kuby/cert-manager/http01_solver'
-    autoload :Http01SolverIngress, 'kuby/cert-manager/http01_solver_ingress'
-    autoload :PrivateKeySecretRef, 'kuby/cert-manager/private_key_secret_ref'
-    autoload :Solver,              'kuby/cert-manager/solver'
+    autoload :DSL,    'kuby/cert-manager/dsl'
+    autoload :Plugin, 'kuby/cert-manager/plugin'
+
+    extend Kuby::CertManager::Entrypoint
   end
 end
 

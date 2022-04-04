@@ -1,3 +1,5 @@
+# typed: false
+
 require 'kuby'
 
 module Kuby
@@ -10,8 +12,13 @@ module Kuby
       end
 
       NAMESPACE = 'cert-manager'.freeze
-      CERT_MANAGER_VERSION = '0.13.1'.freeze
-      CERT_MANAGER_RESOURCE = "https://github.com/jetstack/cert-manager/releases/download/v#{CERT_MANAGER_VERSION}/cert-manager.yaml".freeze
+      CERT_MANAGER_VERSION = '1.7.2'.freeze
+      CERT_MANAGER_RESOURCES = [
+        "https://github.com/jetstack/cert-manager/releases/download/v#{CERT_MANAGER_VERSION}/cert-manager.yaml".freeze,
+        "https://github.com/jetstack/cert-manager/releases/download/v#{CERT_MANAGER_VERSION}/cert-manager.crds.yaml".freeze
+      ]
+
+      CERT_MANAGER_RESOURCES.freeze
 
       def configure(&block)
         @config.instance_eval(&block) if block
@@ -75,7 +82,11 @@ module Kuby
 
       def install_cert_manager
         Kuby.logger.info('Installing cert-manager...')
-        kubernetes_cli.apply_uri(CERT_MANAGER_RESOURCE)
+
+        CERT_MANAGER_RESOURCES.each do |url|
+          kubernetes_cli.apply_uri(url)
+        end
+
         Kuby.logger.info('cert-manager installed successfully!')
       rescue => e
         Kuby.logger.fatal(e.message)

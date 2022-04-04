@@ -2,15 +2,18 @@ source 'https://rubygems.org'
 
 gemspec
 
-# Declare platform-specific gems here so they install correctly.
-# See: https://github.com/rubygems/rubygems/issues/3646
-gem 'helm-rb'
-
 group :development, :test do
   gem 'kuby-core', path: '../kuby-core'
-  gem 'kuby-kube-db', path: '../kuby-kube-db'
+  gem 'kuby-crdb', path: '../kuby-crdb'
+  gem 'kube-dsl', path: '../kube-dsl'
+  gem 'kind-rb'
   gem 'pry-byebug'
   gem 'rake'
+end
+
+group :development do
+  gem 'sorbet', '= 0.5.6433'
+  gem 'parlour', '~> 6.0'
 end
 
 group :test do
