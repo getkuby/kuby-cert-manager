@@ -56,6 +56,8 @@ module Kuby
         config = @config
 
         @cluster_issuer ||= CertManager.issuer do
+          api_version 'cert-manager.io/v1'
+
           metadata do
             name context.send(:issuer_name)
             namespace NAMESPACE
