@@ -6,13 +6,15 @@ module Kuby
       module Acme
         module V1
           class Order < ::KubeDSL::DSLObject
-            object_field(:status) { Kuby::CertManager::DSL::Acme::V1::Status.new }
-            object_field(:spec) { Kuby::CertManager::DSL::Acme::V1::Spec.new }
+            object_field(:status) { Kuby::CertManager::DSL::Acme::V1::OrderStatus.new }
+            object_field(:spec) { Kuby::CertManager::DSL::Acme::V1::OrderSpec.new }
             value_field :api_version
+            object_field(:metadata) { KubeDSL::DSL::Meta::V1::ObjectMeta.new }
 
-            validates :status, object: { kind_of: Kuby::CertManager::DSL::Acme::V1::Status }
-            validates :spec, object: { kind_of: Kuby::CertManager::DSL::Acme::V1::Spec }
+            validates :status, object: { kind_of: Kuby::CertManager::DSL::Acme::V1::OrderStatus }
+            validates :spec, object: { kind_of: Kuby::CertManager::DSL::Acme::V1::OrderSpec }
             validates :api_version, field: { format: :string }, presence: false
+            validates :metadata, object: { kind_of: KubeDSL::DSL::Meta::V1::ObjectMeta }
 
             def serialize
               {}.tap do |result|
@@ -20,6 +22,7 @@ module Kuby
                 result[:kind] = "Order"
                 result[:spec] = spec.serialize
                 result[:apiVersion] = api_version
+                result[:metadata] = metadata.serialize
               end
             end
 

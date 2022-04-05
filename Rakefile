@@ -150,7 +150,11 @@ task :codegen do
 
   generator.generate_resource_files
   generator.generate_autoload_files
-  generator.generate_entrypoint_file
+  generator.generate_entrypoint_file do |resource, ns|
+    # only generate entrypoint methods for resources defined at the top-level, i.e.
+    # not resources defined inside other resources
+    !resource.ref.inline?
+  end
 
   FileUtils.rm_rf(File.join('lib', 'kuby.rb'))
 end

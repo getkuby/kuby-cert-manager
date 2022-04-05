@@ -8,7 +8,7 @@ module Kuby
       class Config
         extend ::KubeDSL::ValueFields
 
-        value_fields :email
+        value_fields :email, :server_url, :skip_tls_verify
       end
 
       NAMESPACE = 'cert-manager'.freeze
@@ -19,6 +19,8 @@ module Kuby
       ]
 
       CERT_MANAGER_RESOURCES.freeze
+
+      DEFAULT_SERVER_URL = 'https://acme-v02.api.letsencrypt.org/directory'.freeze
 
       def configure(&block)
         @config.instance_eval(&block) if block
@@ -53,7 +55,7 @@ module Kuby
         context = self
         config = @config
 
-        @cluster_issuer ||= ClusterIssuer.new do
+        @cluster_issuer ||= CertManager.issuer do
           metadata do
             name context.send(:issuer_name)
             namespace NAMESPACE
@@ -61,7 +63,11 @@ module Kuby
 
           spec do
             acme do
-              server 'https://acme-v02.api.letsencrypt.org/directory'
+              if config.skip_tls_verify
+                skip_tls_verify true
+              end
+
+              server config.server_url || DEFAULT_SERVER_URL
               email config.email
 
               private_key_secret_ref do
@@ -71,7 +77,7 @@ module Kuby
               solver do
                 http01 do
                   ingress do
-                    ingress_class 'nginx'
+                    class_field 'nginx'
                   end
                 end
               end
