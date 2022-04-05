@@ -55,7 +55,7 @@ module Kuby
         context = self
         config = @config
 
-        @cluster_issuer ||= CertManager.issuer do
+        @cluster_issuer ||= CertManager.cluster_issuer do
           api_version 'cert-manager.io/v1'
 
           metadata do
