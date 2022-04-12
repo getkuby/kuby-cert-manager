@@ -20,7 +20,7 @@ module Kuby
 
             def serialize
               {}.tap do |result|
-                result[:selfSigned] = self_signed.serialize
+                result[:selfSigned] = self_signed_present? ? ::KubeDSL::AllowBlank.new(self_signed.serialize) : nil
                 result[:vault] = vault.serialize
                 result[:ca] = ca.serialize
                 result[:venafi] = venafi.serialize

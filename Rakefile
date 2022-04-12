@@ -140,12 +140,21 @@ task :codegen do
       ['KubeDSL', 'DSL'],
       builder.inflector,
       builder.schema_dir,
-      builder.autoload_prefix
+      builder.autoload_prefix,
+      builder.serialize_handlers
     )
 
     ns = external_ref.ruby_namespace + [external_ref.kind]
     exists = ns.inject(Object) { |mod, n| mod.const_get(n, false) } rescue false
     exists ? external_ref : builder.parse_ref(ref_str)
+  end
+
+  generator.builder.register_serialize_handler('cert-manager', 'v1', 'IssuerSpec', 'selfSigned') do |field, inflector|
+    "#{field.send(:ruby_safe_name)}_present? ? ::KubeDSL::AllowBlank.new(#{field.serialize_call(inflector)}) : nil"
+  end
+
+  generator.builder.register_serialize_handler('cert-manager', 'v1', 'ClusterIssuerSpec', 'selfSigned') do |field, inflector|
+    "#{field.send(:ruby_safe_name)}_present? ? ::KubeDSL::AllowBlank.new(#{field.serialize_call(inflector)}) : nil"
   end
 
   generator.generate_resource_files

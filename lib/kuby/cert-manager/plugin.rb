@@ -14,8 +14,7 @@ module Kuby
       NAMESPACE = 'cert-manager'.freeze
       CERT_MANAGER_VERSION = '1.7.2'.freeze
       CERT_MANAGER_RESOURCES = [
-        "https://github.com/jetstack/cert-manager/releases/download/v#{CERT_MANAGER_VERSION}/cert-manager.yaml".freeze,
-        "https://github.com/jetstack/cert-manager/releases/download/v#{CERT_MANAGER_VERSION}/cert-manager.crds.yaml".freeze
+        "https://github.com/jetstack/cert-manager/releases/download/v#{CERT_MANAGER_VERSION}/cert-manager.yaml".freeze
       ]
 
       CERT_MANAGER_RESOURCES.freeze
