@@ -119,6 +119,7 @@ task :codegen do
   FileUtils.rm_rf('./lib/kuby/cert-manager/dsl.rb')
   FileUtils.rm_rf('./lib/kuby/cert-manager/dsl')
   FileUtils.rm_rf('./lib/kuby/cert-manager/entrypoint.rb')
+  FileUtils.rm_rf('./sorbet/rbi/kuby/cert-manager')
   FileUtils.mkdir_p('./lib/kuby/cert-manager/dsl')
 
   local_json_schema_path = 'vendor/json_schema'
