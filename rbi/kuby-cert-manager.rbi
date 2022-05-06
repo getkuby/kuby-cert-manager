@@ -954,27 +954,6 @@ module Kuby
             def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference) }
-            def preference; end
-
-            sig { returns(T::Boolean) }
-            def preference_present?; end
-
-            sig { params(val: T.nilable(Integer)).returns(Integer) }
-            def weight(val = nil); end
-          end
-
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -1035,7 +1014,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -1046,8 +1025,14 @@ module Kuby
             sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms]) }
-            def node_selector_terms(elem_name = nil, &block); end
+            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference) }
+            def preference; end
+
+            sig { returns(T::Boolean) }
+            def preference_present?; end
+
+            sig { params(val: T.nilable(Integer)).returns(Integer) }
+            def weight(val = nil); end
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
@@ -1066,27 +1051,6 @@ module Kuby
 
             sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions]) }
             def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields < ::KubeDSL::DSLObject
@@ -1110,94 +1074,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinity < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution]) }
-            def required_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution]) }
-            def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
-            def pod_affinity_term; end
-
-            sig { returns(T::Boolean) }
-            def pod_affinity_term_present?; end
-
-            sig { params(val: T.nilable(Integer)).returns(Integer) }
-            def weight(val = nil); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector) }
-            def namespace_selector; end
-
-            sig { returns(T::Boolean) }
-            def namespace_selector_present?; end
-
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector) }
-            def label_selector; end
-
-            sig { returns(T::Boolean) }
-            def label_selector_present?; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def namespaces(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def topology_key(val = nil); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -1216,6 +1093,57 @@ module Kuby
 
             sig { params(val: T.nilable(String)).returns(String) }
             def key(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms]) }
+            def node_selector_terms(elem_name = nil, &block); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution]) }
+            def required_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution]) }
+            def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
@@ -1255,6 +1183,96 @@ module Kuby
 
             sig { params(val: T.nilable(String)).returns(String) }
             def key(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector) }
+            def namespace_selector; end
+
+            sig { returns(T::Boolean) }
+            def namespace_selector_present?; end
+
+            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector) }
+            def label_selector; end
+
+            sig { returns(T::Boolean) }
+            def label_selector_present?; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def namespaces(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def topology_key(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
+            def pod_affinity_term; end
+
+            sig { returns(T::Boolean) }
+            def pod_affinity_term_present?; end
+
+            sig { params(val: T.nilable(Integer)).returns(Integer) }
+            def weight(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
@@ -1305,7 +1323,7 @@ module Kuby
             def match_expressions(elem_name = nil, &block); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -1326,25 +1344,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -1383,7 +1383,7 @@ module Kuby
             def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -1393,63 +1393,15 @@ module Kuby
 
             sig { returns(Symbol) }
             def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
-            def pod_affinity_term; end
-
-            sig { returns(T::Boolean) }
-            def pod_affinity_term_present?; end
-
-            sig { params(val: T.nilable(Integer)).returns(Integer) }
-            def weight(val = nil); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector) }
-            def namespace_selector; end
-
-            sig { returns(T::Boolean) }
-            def namespace_selector_present?; end
-
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector) }
-            def label_selector; end
-
-            sig { returns(T::Boolean) }
-            def label_selector_present?; end
 
             sig { params(val: T.nilable(String)).returns(String) }
-            def namespaces(val = nil); end
+            def operator(val = nil); end
 
             sig { params(val: T.nilable(String)).returns(String) }
-            def topology_key(val = nil); end
-          end
+            def values(val = nil); end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
@@ -1491,7 +1443,115 @@ module Kuby
             def match_expressions(elem_name = nil, &block); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector) }
+            def namespace_selector; end
+
+            sig { returns(T::Boolean) }
+            def namespace_selector_present?; end
+
+            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector) }
+            def label_selector; end
+
+            sig { returns(T::Boolean) }
+            def label_selector_present?; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def namespaces(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def topology_key(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
+            def pod_affinity_term; end
+
+            sig { returns(T::Boolean) }
+            def pod_affinity_term_present?; end
+
+            sig { params(val: T.nilable(Integer)).returns(Integer) }
+            def weight(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
+          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -1542,45 +1602,6 @@ module Kuby
             def topology_key(val = nil); end
           end
 
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -1597,27 +1618,6 @@ module Kuby
 
             sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
             def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecTolerations < ::KubeDSL::DSLObject
@@ -3469,6 +3469,27 @@ module Kuby
             def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -3490,7 +3511,7 @@ module Kuby
             def weight(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3501,10 +3522,46 @@ module Kuby
             sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields]) }
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms]) }
+            def node_selector_terms(elem_name = nil, &block); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields]) }
             def match_fields(elem_name = nil, &block); end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions]) }
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions]) }
             def match_expressions(elem_name = nil, &block); end
           end
 
@@ -3529,7 +3586,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3540,68 +3597,11 @@ module Kuby
             sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms]) }
-            def node_selector_terms(elem_name = nil, &block); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields]) }
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields]) }
             def match_fields(elem_name = nil, &block); end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions]) }
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions]) }
             def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields < ::KubeDSL::DSLObject
@@ -3643,27 +3643,6 @@ module Kuby
             def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
-            def pod_affinity_term; end
-
-            sig { returns(T::Boolean) }
-            def pod_affinity_term_present?; end
-
-            sig { params(val: T.nilable(Integer)).returns(Integer) }
-            def weight(val = nil); end
-          end
-
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -3694,25 +3673,7 @@ module Kuby
             def topology_key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3733,7 +3694,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3744,14 +3705,17 @@ module Kuby
             sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
+            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
+            def pod_affinity_term; end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
+            sig { returns(T::Boolean) }
+            def pod_affinity_term_present?; end
+
+            sig { params(val: T.nilable(Integer)).returns(Integer) }
+            def weight(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3802,7 +3766,7 @@ module Kuby
             def topology_key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3816,7 +3780,25 @@ module Kuby
             sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
             def match_labels(&block); end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions]) }
             def match_expressions(elem_name = nil, &block); end
           end
 
@@ -3841,7 +3823,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3855,7 +3837,7 @@ module Kuby
             sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
             def match_labels(&block); end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
             def match_expressions(elem_name = nil, &block); end
           end
 
@@ -3880,76 +3862,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinity < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution]) }
-            def required_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution]) }
-            def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
-            def pod_affinity_term; end
-
-            sig { returns(T::Boolean) }
-            def pod_affinity_term_present?; end
-
-            sig { params(val: T.nilable(Integer)).returns(Integer) }
-            def weight(val = nil); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector) }
-            def namespace_selector; end
-
-            sig { returns(T::Boolean) }
-            def namespace_selector_present?; end
-
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector) }
-            def label_selector; end
-
-            sig { returns(T::Boolean) }
-            def label_selector_present?; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def namespaces(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def topology_key(val = nil); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -3963,68 +3876,8 @@ module Kuby
             sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
             def match_labels(&block); end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
             def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
@@ -4057,24 +3910,6 @@ module Kuby
             def topology_key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -4096,7 +3931,7 @@ module Kuby
             def key(val = nil); end
           end
 
-          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -4107,11 +3942,56 @@ module Kuby
             sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
 
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
+            def pod_affinity_term; end
+
+            sig { returns(T::Boolean) }
+            def pod_affinity_term_present?; end
+
+            sig { params(val: T.nilable(Integer)).returns(Integer) }
+            def weight(val = nil); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
@@ -4133,6 +4013,126 @@ module Kuby
 
             sig { params(val: T.nilable(String)).returns(String) }
             def key(val = nil); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector) }
+            def namespace_selector; end
+
+            sig { returns(T::Boolean) }
+            def namespace_selector_present?; end
+
+            sig { returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector) }
+            def label_selector; end
+
+            sig { returns(T::Boolean) }
+            def label_selector_present?; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def namespaces(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def topology_key(val = nil); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution]) }
+            def required_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution]) }
+            def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecTolerations < ::KubeDSL::DSLObject
@@ -5548,6 +5548,48 @@ module Kuby
             def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -5587,48 +5629,6 @@ module Kuby
             def match_expressions(elem_name = nil, &block); end
           end
 
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -5642,24 +5642,6 @@ module Kuby
 
             sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms]) }
             def node_selector_terms(elem_name = nil, &block); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields]) }
-            def match_fields(elem_name = nil, &block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
@@ -5681,6 +5663,24 @@ module Kuby
 
             sig { params(val: T.nilable(String)).returns(String) }
             def key(val = nil); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields]) }
+            def match_fields(elem_name = nil, &block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields < ::KubeDSL::DSLObject
@@ -5722,27 +5722,6 @@ module Kuby
             def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
-            def pod_affinity_term; end
-
-            sig { returns(T::Boolean) }
-            def pod_affinity_term_present?; end
-
-            sig { params(val: T.nilable(Integer)).returns(Integer) }
-            def weight(val = nil); end
-          end
-
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -5771,6 +5750,27 @@ module Kuby
 
             sig { params(val: T.nilable(String)).returns(String) }
             def topology_key(val = nil); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
@@ -5830,7 +5830,46 @@ module Kuby
             def match_expressions(elem_name = nil, &block); end
           end
 
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm) }
+            def pod_affinity_term; end
+
+            sig { returns(T::Boolean) }
+            def pod_affinity_term_present?; end
+
+            sig { params(val: T.nilable(Integer)).returns(Integer) }
+            def weight(val = nil); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -5899,45 +5938,6 @@ module Kuby
             def match_expressions(elem_name = nil, &block); end
           end
 
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -5977,6 +5977,24 @@ module Kuby
             def preferred_during_scheduling_ignored_during_executions(elem_name = nil, &block); end
           end
 
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -5996,6 +6014,45 @@ module Kuby
 
             sig { params(val: T.nilable(Integer)).returns(Integer) }
             def weight(val = nil); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
@@ -6028,133 +6085,7 @@ module Kuby
             def topology_key(val = nil); end
           end
 
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def operator(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def values(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def key(val = nil); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector) }
-            def namespace_selector; end
-
-            sig { returns(T::Boolean) }
-            def namespace_selector_present?; end
-
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector) }
-            def label_selector; end
-
-            sig { returns(T::Boolean) }
-            def label_selector_present?; end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def namespaces(val = nil); end
-
-            sig { params(val: T.nilable(String)).returns(String) }
-            def topology_key(val = nil); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
-            include KubeDSL::ValueFields::InstanceMethods
-            extend KubeDSL::ValueFields::ClassMethods
-            extend KubeDSL::Validations::ClassMethods
-
-            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
-            def serialize; end
-
-            sig { returns(Symbol) }
-            def kind_sym; end
-
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
-            def match_labels(&block); end
-
-            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
-            def match_expressions(elem_name = nil, &block); end
-          end
-
-          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
             extend KubeDSL::Validations::ClassMethods
@@ -6193,6 +6124,57 @@ module Kuby
             def match_expressions(elem_name = nil, &block); end
           end
 
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector) }
+            def namespace_selector; end
+
+            sig { returns(T::Boolean) }
+            def namespace_selector_present?; end
+
+            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector) }
+            def label_selector; end
+
+            sig { returns(T::Boolean) }
+            def label_selector_present?; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def namespaces(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def topology_key(val = nil); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def operator(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def values(val = nil); end
+
+            sig { params(val: T.nilable(String)).returns(String) }
+            def key(val = nil); end
+          end
+
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
             include KubeDSL::ValueFields::InstanceMethods
             extend KubeDSL::ValueFields::ClassMethods
@@ -6212,6 +6194,24 @@ module Kuby
 
             sig { params(val: T.nilable(String)).returns(String) }
             def key(val = nil); end
+          end
+
+          class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
+            sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
+            def serialize; end
+
+            sig { returns(Symbol) }
+            def kind_sym; end
+
+            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            def match_labels(&block); end
+
+            sig { params(elem_name: T.nilable(Symbol), block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions))).returns(T::Array[Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions]) }
+            def match_expressions(elem_name = nil, &block); end
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecTolerations < ::KubeDSL::DSLObject

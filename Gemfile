@@ -5,7 +5,7 @@ gemspec
 group :development, :test do
   gem 'kuby-core'
   gem 'kuby-crdb'
-  gem 'kube-dsl', '>= 0.7.2', '< 1'
+  gem 'kube-dsl', '>= 0.7.3', '< 1'
   gem 'kind-rb'
   gem 'pry-byebug'
   gem 'rake'
