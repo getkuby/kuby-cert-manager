@@ -14299,7 +14299,6 @@ module KubeDSL::StringHelpers
 end
 
 KubeDSL::StringHelpers::RUBY_KEYWORDS = T.let(T.unsafe(nil), Array)
-KubeDSL::VERSION = T.let(T.unsafe(nil), String)
 class KubeDSL::ValidationError < ::StandardError; end
 
 module KubeDSL::Validations

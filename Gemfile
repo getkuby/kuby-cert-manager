@@ -5,7 +5,7 @@ gemspec
 group :development, :test do
   gem 'kuby-core', path: '../kuby-core'
   gem 'kuby-crdb'
-  gem 'kube-dsl', path: '../kube-dsl'
+  gem 'kube-dsl', '>= 0.7.2', '< 1'
   gem 'kind-rb'
   gem 'pry-byebug'
   gem 'rake'
