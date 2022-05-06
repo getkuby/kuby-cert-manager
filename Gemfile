@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
-  gem 'kuby-core', path: '../kuby-core'
+  gem 'kuby-core'
   gem 'kuby-crdb'
   gem 'kube-dsl', '>= 0.7.2', '< 1'
   gem 'kind-rb'
