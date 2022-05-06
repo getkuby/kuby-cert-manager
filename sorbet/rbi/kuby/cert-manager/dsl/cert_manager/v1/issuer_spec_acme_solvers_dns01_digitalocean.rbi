@@ -6,18 +6,21 @@ module Kuby
       module CertManager
         module V1
           class IssuerSpecAcmeSolversDns01Digitalocean < ::KubeDSL::DSLObject
-            sig {
+            T::Sig::WithoutRuntime.sig {
               returns(
                 T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]
               )
             }
             def serialize; end
 
-            sig { returns(Symbol) }
+            T::Sig::WithoutRuntime.sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversDns01DigitaloceanTokenSecretRef) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecAcmeSolversDns01DigitaloceanTokenSecretRef) }
             def token_secret_ref; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def token_secret_ref_present?; end
           end
         end
       end

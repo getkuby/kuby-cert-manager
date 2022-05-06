@@ -6,27 +6,36 @@ module Kuby
       module Acme
         module V1
           class ChallengeSpecSolverDns01Akamai < ::KubeDSL::DSLObject
-            sig {
+            T::Sig::WithoutRuntime.sig {
               returns(
                 T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]
               )
             }
             def serialize; end
 
-            sig { returns(Symbol) }
+            T::Sig::WithoutRuntime.sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(val: T.nilable(String)).returns(String) }
+            T::Sig::WithoutRuntime.sig { params(val: T.nilable(String)).returns(String) }
             def service_consumer_domain(val = nil); end
 
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01AkamaiClientTokenSecretRef) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01AkamaiClientTokenSecretRef) }
             def client_token_secret_ref; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def client_token_secret_ref_present?; end
 
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01AkamaiAccessTokenSecretRef) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01AkamaiAccessTokenSecretRef) }
             def access_token_secret_ref; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def access_token_secret_ref_present?; end
 
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01AkamaiClientSecretSecretRef) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01AkamaiClientSecretSecretRef) }
             def client_secret_secret_ref; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def client_secret_secret_ref_present?; end
           end
         end
       end

@@ -6,23 +6,26 @@ module Kuby
       module CertManager
         module V1
           class IssuerSpecVaultAuthKubernetes < ::KubeDSL::DSLObject
-            sig {
+            T::Sig::WithoutRuntime.sig {
               returns(
                 T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]
               )
             }
             def serialize; end
 
-            sig { returns(Symbol) }
+            T::Sig::WithoutRuntime.sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecVaultAuthKubernetesSecretRef) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::CertManager::V1::IssuerSpecVaultAuthKubernetesSecretRef) }
             def secret_ref; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def secret_ref_present?; end
 
-            sig { params(val: T.nilable(String)).returns(String) }
+            T::Sig::WithoutRuntime.sig { params(val: T.nilable(String)).returns(String) }
             def mount_path(val = nil); end
 
-            sig { params(val: T.nilable(String)).returns(String) }
+            T::Sig::WithoutRuntime.sig { params(val: T.nilable(String)).returns(String) }
             def role(val = nil); end
           end
         end

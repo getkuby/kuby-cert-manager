@@ -4,7 +4,7 @@ gemspec
 
 group :development, :test do
   gem 'kuby-core', path: '../kuby-core'
-  gem 'kuby-crdb', path: '../kuby-crdb'
+  gem 'kuby-crdb'
   gem 'kube-dsl', path: '../kube-dsl'
   gem 'kind-rb'
   gem 'pry-byebug'
@@ -12,7 +12,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sorbet', '= 0.5.6433'
+  gem 'sorbet'
+  gem 'tapioca', '~> 0.7'
   gem 'parlour', '~> 6.0'
 end
 

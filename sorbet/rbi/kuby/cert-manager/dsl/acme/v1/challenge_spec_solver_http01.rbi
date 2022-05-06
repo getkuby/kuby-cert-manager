@@ -6,21 +6,27 @@ module Kuby
       module Acme
         module V1
           class ChallengeSpecSolverHttp01 < ::KubeDSL::DSLObject
-            sig {
+            T::Sig::WithoutRuntime.sig {
               returns(
                 T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]
               )
             }
             def serialize; end
 
-            sig { returns(Symbol) }
+            T::Sig::WithoutRuntime.sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01Ingress) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01Ingress) }
             def ingress; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def ingress_present?; end
 
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01GatewayHTTPRoute) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01GatewayHTTPRoute) }
             def gateway_http_route; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def gateway_http_route_present?; end
           end
         end
       end

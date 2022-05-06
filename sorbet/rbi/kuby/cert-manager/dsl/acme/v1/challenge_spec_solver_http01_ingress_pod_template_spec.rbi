@@ -6,29 +6,37 @@ module Kuby
       module Acme
         module V1
           class ChallengeSpecSolverHttp01IngressPodTemplateSpec < ::KubeDSL::DSLObject
-            sig {
+            T::Sig::WithoutRuntime.sig {
               returns(
                 T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]
               )
             }
             def serialize; end
 
-            sig { returns(Symbol) }
+            T::Sig::WithoutRuntime.sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(val: T.nilable(String)).returns(String) }
+            T::Sig::WithoutRuntime.sig { params(val: T.nilable(String)).returns(String) }
             def priority_class_name(val = nil); end
 
-            sig { params(val: T.nilable(String)).returns(String) }
-            def tolerations(val = nil); end
+            T::Sig::WithoutRuntime.sig {
+              params(
+                elem_name: T.nilable(Symbol),
+                block: T.nilable(T.proc.returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecTolerations))
+              ).returns(T::Array[Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecTolerations])
+            }
+            def tolerations(elem_name = nil, &block); end
 
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinity) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinity) }
             def affinity; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def affinity_present?; end
 
-            sig { params(val: T.nilable(String)).returns(String) }
+            T::Sig::WithoutRuntime.sig { params(val: T.nilable(String)).returns(String) }
             def service_account_name(val = nil); end
 
-            sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
+            T::Sig::WithoutRuntime.sig { params(block: T.nilable(T.proc.void)).returns(::KubeDSL::KeyValueFields) }
             def node_selector(&block); end
           end
         end

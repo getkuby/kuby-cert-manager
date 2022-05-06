@@ -6,24 +6,27 @@ module Kuby
       module Acme
         module V1
           class ChallengeSpecSolverDns01CloudDNS < ::KubeDSL::DSLObject
-            sig {
+            T::Sig::WithoutRuntime.sig {
               returns(
                 T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]
               )
             }
             def serialize; end
 
-            sig { returns(Symbol) }
+            T::Sig::WithoutRuntime.sig { returns(Symbol) }
             def kind_sym; end
 
-            sig { params(val: T.nilable(String)).returns(String) }
+            T::Sig::WithoutRuntime.sig { params(val: T.nilable(String)).returns(String) }
             def hosted_zone_name(val = nil); end
 
-            sig { params(val: T.nilable(String)).returns(String) }
+            T::Sig::WithoutRuntime.sig { params(val: T.nilable(String)).returns(String) }
             def project(val = nil); end
 
-            sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01CloudDNSServiceAccountSecretRef) }
+            T::Sig::WithoutRuntime.sig { returns(Kuby::CertManager::DSL::Acme::V1::ChallengeSpecSolverDns01CloudDNSServiceAccountSecretRef) }
             def service_account_secret_ref; end
+            
+            T::Sig::WithoutRuntime.sig { returns(T::Boolean) }
+            def service_account_secret_ref_present?; end
           end
         end
       end
