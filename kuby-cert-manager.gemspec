@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'kube-dsl', '~> 0.1'
 
   s.require_path = 'lib'
-  s.files = Dir['{lib,spec}/**/*', 'Gemfile', 'LICENSE', 'CHANGELOG.md', 'README.md', 'Rakefile', 'kuby-cert-manager.gemspec']
+  s.files = Dir['{lib,spec,rbi}/**/*', 'Gemfile', 'LICENSE', 'CHANGELOG.md', 'README.md', 'Rakefile', 'kuby-cert-manager.gemspec']
 end
