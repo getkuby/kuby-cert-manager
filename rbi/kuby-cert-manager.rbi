@@ -43,6 +43,10 @@ module Kuby
       module Acme
         module V1
           class Challenge < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -72,6 +76,10 @@ module Kuby
           end
 
           class ChallengeList < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -92,6 +100,10 @@ module Kuby
           end
 
           class ChallengeSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -133,6 +145,10 @@ module Kuby
           end
 
           class ChallengeSpecIssuerRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -150,6 +166,10 @@ module Kuby
           end
 
           class ChallengeSpecSolver < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -176,6 +196,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -241,6 +265,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AcmeDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -258,6 +286,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AcmeDNSAccountSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -272,6 +304,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Akamai < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -301,6 +337,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AkamaiAccessTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -315,6 +355,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AkamaiClientSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -329,6 +373,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AkamaiClientTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -343,6 +391,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AzureDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -381,6 +433,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AzureDNSClientSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -395,6 +451,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01AzureDNSManagedIdentity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -409,6 +469,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01CloudDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -429,6 +493,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01CloudDNSServiceAccountSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -443,6 +511,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Cloudflare < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -466,6 +538,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01CloudflareApiKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -480,6 +556,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01CloudflareApiTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -494,6 +574,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Digitalocean < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -508,6 +592,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01DigitaloceanTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -522,6 +610,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Rfc2136 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -545,6 +637,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Rfc2136TsigSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -559,6 +655,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Route53 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -585,6 +685,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Route53SecretAccessKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -599,6 +703,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverDns01Webhook < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -613,6 +721,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -633,6 +745,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01GatewayHTTPRoute < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -647,6 +763,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01Ingress < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -676,6 +796,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressIngressTemplate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -690,6 +814,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressIngressTemplateMetadata < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -704,6 +832,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -724,6 +856,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateMetadata < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -738,6 +874,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -764,6 +904,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -790,6 +934,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -807,6 +955,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -824,6 +976,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -838,6 +994,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -855,6 +1015,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -872,6 +1036,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -883,6 +1051,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -897,6 +1069,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -914,6 +1090,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -931,6 +1111,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -945,6 +1129,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -962,6 +1150,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -988,6 +1180,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1002,6 +1198,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1019,6 +1219,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1033,6 +1237,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1050,6 +1258,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1076,6 +1288,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1090,6 +1306,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1107,6 +1327,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1121,6 +1345,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1138,6 +1366,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1152,6 +1384,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1169,6 +1405,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1195,6 +1435,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1209,6 +1453,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1226,6 +1474,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1240,6 +1492,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1257,6 +1513,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1283,6 +1543,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1297,6 +1561,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1314,6 +1582,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1328,6 +1600,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1345,6 +1621,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverHttp01IngressPodTemplateSpecTolerations < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1368,6 +1648,10 @@ module Kuby
           end
 
           class ChallengeSpecSolverSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1385,6 +1669,10 @@ module Kuby
           end
 
           class ChallengeStatus < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1405,6 +1693,10 @@ module Kuby
           end
 
           class Order < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1434,6 +1726,10 @@ module Kuby
           end
 
           class OrderList < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1454,6 +1750,10 @@ module Kuby
           end
 
           class OrderSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1483,6 +1783,10 @@ module Kuby
           end
 
           class OrderSpecIssuerRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1500,6 +1804,10 @@ module Kuby
           end
 
           class OrderStatus < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1529,6 +1837,10 @@ module Kuby
           end
 
           class OrderStatusAuthorizations < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1552,6 +1864,10 @@ module Kuby
           end
 
           class OrderStatusAuthorizationsChallenges < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1573,6 +1889,10 @@ module Kuby
       module CertManager
         module V1
           class Certificate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1602,6 +1922,10 @@ module Kuby
           end
 
           class CertificateList < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1622,6 +1946,10 @@ module Kuby
           end
 
           class CertificateRequest < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1651,6 +1979,10 @@ module Kuby
           end
 
           class CertificateRequestList < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1671,6 +2003,10 @@ module Kuby
           end
 
           class CertificateRequestSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1709,6 +2045,10 @@ module Kuby
           end
 
           class CertificateRequestSpecIssuerRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1726,6 +2066,10 @@ module Kuby
           end
 
           class CertificateRequestStatus < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1746,6 +2090,10 @@ module Kuby
           end
 
           class CertificateRequestStatusConditions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1769,6 +2117,10 @@ module Kuby
           end
 
           class CertificateSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1846,6 +2198,10 @@ module Kuby
           end
 
           class CertificateSpecAdditionalOutputFormats < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1857,6 +2213,10 @@ module Kuby
           end
 
           class CertificateSpecIssuerRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1874,6 +2234,10 @@ module Kuby
           end
 
           class CertificateSpecKeystores < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1894,6 +2258,10 @@ module Kuby
           end
 
           class CertificateSpecKeystoresJks < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1911,6 +2279,10 @@ module Kuby
           end
 
           class CertificateSpecKeystoresJksPasswordSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1925,6 +2297,10 @@ module Kuby
           end
 
           class CertificateSpecKeystoresPkcs12 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1942,6 +2318,10 @@ module Kuby
           end
 
           class CertificateSpecKeystoresPkcs12PasswordSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1956,6 +2336,10 @@ module Kuby
           end
 
           class CertificateSpecPrivateKey < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1976,6 +2360,10 @@ module Kuby
           end
 
           class CertificateSpecSecretTemplate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -1990,6 +2378,10 @@ module Kuby
           end
 
           class CertificateSpecSubject < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2022,6 +2414,10 @@ module Kuby
           end
 
           class CertificateStatus < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2051,6 +2447,10 @@ module Kuby
           end
 
           class CertificateStatusConditions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2077,6 +2477,10 @@ module Kuby
           end
 
           class ClusterIssuer < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2106,6 +2510,10 @@ module Kuby
           end
 
           class ClusterIssuerList < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2126,6 +2534,10 @@ module Kuby
           end
 
           class ClusterIssuerSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2164,6 +2576,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcme < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2205,6 +2621,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeExternalAccountBinding < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2225,6 +2645,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeExternalAccountBindingKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2239,6 +2663,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmePrivateKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2253,6 +2681,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolvers < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2279,6 +2711,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2344,6 +2780,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AcmeDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2361,6 +2801,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AcmeDNSAccountSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2375,6 +2819,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Akamai < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2404,6 +2852,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AkamaiAccessTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2418,6 +2870,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AkamaiClientSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2432,6 +2888,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AkamaiClientTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2446,6 +2906,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AzureDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2484,6 +2948,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AzureDNSClientSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2498,6 +2966,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01AzureDNSManagedIdentity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2512,6 +2984,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01CloudDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2532,6 +3008,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01CloudDNSServiceAccountSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2546,6 +3026,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Cloudflare < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2569,6 +3053,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01CloudflareApiKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2583,6 +3071,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01CloudflareApiTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2597,6 +3089,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Digitalocean < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2611,6 +3107,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01DigitaloceanTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2625,6 +3125,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Rfc2136 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2648,6 +3152,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Rfc2136TsigSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2662,6 +3170,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Route53 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2688,6 +3200,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Route53SecretAccessKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2702,6 +3218,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversDns01Webhook < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2716,6 +3236,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2736,6 +3260,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01GatewayHTTPRoute < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2750,6 +3278,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01Ingress < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2779,6 +3311,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressIngressTemplate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2793,6 +3329,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressIngressTemplateMetadata < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2807,6 +3347,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2827,6 +3371,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateMetadata < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2841,6 +3389,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2867,6 +3419,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2893,6 +3449,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2910,6 +3470,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2927,6 +3491,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2941,6 +3509,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2958,6 +3530,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2975,6 +3551,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -2986,6 +3566,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3000,6 +3584,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3017,6 +3605,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3034,6 +3626,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3048,6 +3644,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3065,6 +3665,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3091,6 +3695,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3105,6 +3713,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3122,6 +3734,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3136,6 +3752,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3153,6 +3773,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3179,6 +3803,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3193,6 +3821,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3210,6 +3842,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3224,6 +3860,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3241,6 +3881,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3255,6 +3899,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3272,6 +3920,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3298,6 +3950,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3312,6 +3968,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3329,6 +3989,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3343,6 +4007,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3360,6 +4028,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3386,6 +4058,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3400,6 +4076,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3417,6 +4097,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3431,6 +4115,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3448,6 +4136,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversHttp01IngressPodTemplateSpecTolerations < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3471,6 +4163,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecAcmeSolversSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3488,6 +4184,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecCa < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3505,6 +4205,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecSelfSigned < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3516,6 +4220,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVault < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3542,6 +4250,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVaultAuth < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3568,6 +4280,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVaultAuthAppRole < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3588,6 +4304,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVaultAuthAppRoleSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3602,6 +4322,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVaultAuthKubernetes < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3622,6 +4346,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVaultAuthKubernetesSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3636,6 +4364,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVaultAuthTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3650,6 +4382,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVenafi < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3673,6 +4409,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVenafiCloud < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3690,6 +4430,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVenafiCloudApiTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3704,6 +4448,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVenafiTpp < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3724,6 +4472,10 @@ module Kuby
           end
 
           class ClusterIssuerSpecVenafiTppCredentialsRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3735,6 +4487,10 @@ module Kuby
           end
 
           class ClusterIssuerStatus < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3752,6 +4508,10 @@ module Kuby
           end
 
           class ClusterIssuerStatusAcme < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3766,6 +4526,10 @@ module Kuby
           end
 
           class ClusterIssuerStatusConditions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3792,6 +4556,10 @@ module Kuby
           end
 
           class Issuer < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3821,6 +4589,10 @@ module Kuby
           end
 
           class IssuerList < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3841,6 +4613,10 @@ module Kuby
           end
 
           class IssuerSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3879,6 +4655,10 @@ module Kuby
           end
 
           class IssuerSpecAcme < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3920,6 +4700,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeExternalAccountBinding < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3940,6 +4724,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeExternalAccountBindingKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3954,6 +4742,10 @@ module Kuby
           end
 
           class IssuerSpecAcmePrivateKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3968,6 +4760,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolvers < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -3994,6 +4790,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4059,6 +4859,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AcmeDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4076,6 +4880,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AcmeDNSAccountSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4090,6 +4898,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Akamai < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4119,6 +4931,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AkamaiAccessTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4133,6 +4949,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AkamaiClientSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4147,6 +4967,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AkamaiClientTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4161,6 +4985,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AzureDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4199,6 +5027,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AzureDNSClientSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4213,6 +5045,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01AzureDNSManagedIdentity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4227,6 +5063,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01CloudDNS < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4247,6 +5087,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01CloudDNSServiceAccountSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4261,6 +5105,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Cloudflare < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4284,6 +5132,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01CloudflareApiKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4298,6 +5150,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01CloudflareApiTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4312,6 +5168,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Digitalocean < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4326,6 +5186,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01DigitaloceanTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4340,6 +5204,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Rfc2136 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4363,6 +5231,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Rfc2136TsigSecretSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4377,6 +5249,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Route53 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4403,6 +5279,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Route53SecretAccessKeySecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4417,6 +5297,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversDns01Webhook < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4431,6 +5315,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01 < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4451,6 +5339,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01GatewayHTTPRoute < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4465,6 +5357,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01Ingress < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4494,6 +5390,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressIngressTemplate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4508,6 +5408,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressIngressTemplateMetadata < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4522,6 +5426,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplate < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4542,6 +5450,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateMetadata < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4556,6 +5468,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpec < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4582,6 +5498,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4608,6 +5528,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4625,6 +5549,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4642,6 +5570,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4656,6 +5588,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4673,6 +5609,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4690,6 +5630,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4701,6 +5645,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4715,6 +5663,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4732,6 +5684,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4749,6 +5705,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4763,6 +5723,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4780,6 +5744,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4806,6 +5774,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4820,6 +5792,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4837,6 +5813,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4851,6 +5831,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4868,6 +5852,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4894,6 +5882,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4908,6 +5900,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4925,6 +5921,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4939,6 +5939,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4956,6 +5960,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinity < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4970,6 +5978,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -4987,6 +5999,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5013,6 +6029,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5027,6 +6047,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5044,6 +6068,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5058,6 +6086,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5075,6 +6107,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5101,6 +6137,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5115,6 +6155,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5132,6 +6176,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5146,6 +6194,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5163,6 +6215,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversHttp01IngressPodTemplateSpecTolerations < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5186,6 +6242,10 @@ module Kuby
           end
 
           class IssuerSpecAcmeSolversSelector < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5203,6 +6263,10 @@ module Kuby
           end
 
           class IssuerSpecCa < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5220,6 +6284,10 @@ module Kuby
           end
 
           class IssuerSpecSelfSigned < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5231,6 +6299,10 @@ module Kuby
           end
 
           class IssuerSpecVault < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5257,6 +6329,10 @@ module Kuby
           end
 
           class IssuerSpecVaultAuth < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5283,6 +6359,10 @@ module Kuby
           end
 
           class IssuerSpecVaultAuthAppRole < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5303,6 +6383,10 @@ module Kuby
           end
 
           class IssuerSpecVaultAuthAppRoleSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5317,6 +6401,10 @@ module Kuby
           end
 
           class IssuerSpecVaultAuthKubernetes < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5337,6 +6425,10 @@ module Kuby
           end
 
           class IssuerSpecVaultAuthKubernetesSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5351,6 +6443,10 @@ module Kuby
           end
 
           class IssuerSpecVaultAuthTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5365,6 +6461,10 @@ module Kuby
           end
 
           class IssuerSpecVenafi < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5388,6 +6488,10 @@ module Kuby
           end
 
           class IssuerSpecVenafiCloud < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5405,6 +6509,10 @@ module Kuby
           end
 
           class IssuerSpecVenafiCloudApiTokenSecretRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5419,6 +6527,10 @@ module Kuby
           end
 
           class IssuerSpecVenafiTpp < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5439,6 +6551,10 @@ module Kuby
           end
 
           class IssuerSpecVenafiTppCredentialsRef < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5450,6 +6566,10 @@ module Kuby
           end
 
           class IssuerStatus < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5467,6 +6587,10 @@ module Kuby
           end
 
           class IssuerStatusAcme < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
@@ -5481,6 +6605,10 @@ module Kuby
           end
 
           class IssuerStatusConditions < ::KubeDSL::DSLObject
+            include KubeDSL::ValueFields::InstanceMethods
+            extend KubeDSL::ValueFields::ClassMethods
+            extend KubeDSL::Validations::ClassMethods
+
             sig { returns(T::Hash[Symbol, T.any(String, Integer, Float, T::Boolean, T::Array[T.untyped], T::Hash[Symbol, T.untyped])]) }
             def serialize; end
 
